@@ -1,0 +1,74 @@
+@import "../../../../scss/variables";
+
+.slide--credit {
+  background-color: $background-accent;
+  background-image: url("../../../../assets/img/black-card-mobile@1x.png");
+  background-position: calc(50% + 184px) 34px;
+  background-size: 245.5px 167px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../../../assets/img/black-card-mobile@2x.png");
+  }
+}
+
+.slide__title--credit {
+  color: $font-light;
+}
+
+.slide__sub-title--credit {
+  color: $font-slider-light;
+}
+
+.slide__link--credit {
+  color: $font-main;
+
+  background-color: $background-minor;
+}
+
+@media (min-width: $tablet-width) {
+  .slide--credit {
+    position: relative;
+
+    background-image: url("../../../../assets/img/black-card-tablet@1x.png"),
+    url("../../../../assets/img/white-card-tablet@1x.png"),
+    linear-gradient(183.47deg, rgba(56, 65, 255, 0) 27.26%, #3841ff 97.14%),
+    linear-gradient(180.24deg, rgba(32, 39, 179, 0) 32.89%, #2027b3 99.79%);
+    background-position: calc(50% + 100px) 82px, calc(50% + 185px) 38px,
+    calc(50% + 161px) 100%, calc(50% + 3251px) 0;
+    background-size: 272px 188px, 272px 188px, 179px 199px, 6000px 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../assets/img/black-card-tablet@2x.png"),
+      url("../../../../assets/img/white-card-tablet@2x.png"),
+      linear-gradient(183.47deg, rgba(56, 65, 255, 0) 27.26%, #3841ff 97.14%),
+      linear-gradient(180.24deg, rgba(32, 39, 179, 0) 32.89%, #2027b3 99.79%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slide--credit {
+    position: relative;
+
+    background-image: url("../../../../assets/img/black-card-desktop@1x.png"),
+    url("../../../../assets/img/white-card-desktop@1x.png"),
+    linear-gradient(180.24deg, rgba(32, 39, 179, 0) 36.31%, #2027b3 99.79%),
+    linear-gradient(183.47deg, rgba(56, 65, 255, 0) 66.3%, #3841ff 97.14%),
+    linear-gradient(183.47deg, rgba(56, 65, 255, 0) 27.26%, #3841ff 97.14%),
+    linear-gradient(180.24deg, rgba(32, 39, 179, 0) 32.89%, #2027b3 99.79%);
+    background-position: calc(50% + 183px) 119px, calc(50% + 292px) 61px,
+    calc(50% - 3533px) 0, calc(50% - 458px) 100%, calc(50% + 249px) 100%,
+    calc(50% + 3384px) 0;
+    background-size: 335px 228px, 335px 228px, 6000px 100%, 150px 269px,
+    270px 269px, 6000px 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../assets/img/black-card-desktop@2x.png"),
+      url("../../../../assets/img/white-card-desktop@2x.png"),
+      linear-gradient(180.24deg, rgba(32, 39, 179, 0) 36.31%, #2027b3 99.79%),
+      linear-gradient(183.47deg, rgba(56, 65, 255, 0) 66.3%, #3841ff 97.14%),
+      linear-gradient(183.47deg, rgba(56, 65, 255, 0) 27.26%, #3841ff 97.14%),
+      linear-gradient(180.24deg, rgba(32, 39, 179, 0) 32.89%, #2027b3 99.79%);
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.services__pagination {
+  display: none;
+}
+
+.services__bullet {
+  @include slider-bullet;
+
+  &--active {
+    background-color: $slider-pagination-inverse;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services__pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .services__bullet {
+    flex-grow: 1;
+    min-height: 93px;
+    margin: 0;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+
+    &--active {
+      background-color: $background-minor;
+    }
+
+    &:hover {
+      background-color: $background-minor;
+    }
+  }
+
+  .services__label {
+    display: inline-block;
+    height: 34px;
+    padding-left: 40px;
+
+    line-height: 34px;
+
+    background-repeat: no-repeat;
+
+    &--deposit {
+      padding-left: 45px;
+
+      background-image: url("../../assets/img/deposit.svg");
+    }
+
+    &--credit {
+      padding-left: 44px;
+
+      background-image: url("../../assets/img/credit.svg");
+    }
+
+    &--insurance {
+      padding-left: 39px;
+
+      background-image: url("../../assets/img/insurance.svg");
+    }
+
+    &--online {
+      padding-left: 29px;
+
+      background-image: url("../../assets/img/online.svg");
+    }
+  }
+}

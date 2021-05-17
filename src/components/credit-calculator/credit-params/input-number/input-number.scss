@@ -1,0 +1,102 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins";
+
+.input-number__wrap {
+  @include input;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 45px;
+  padding-left: 64px;
+
+  &--credit-period {
+    padding-left: 33px;
+  }
+}
+
+.input-number__wrap--error {
+  background-color: $error;
+
+  &:hover {
+    background-color: $error;
+  }
+
+  &::before {
+    content: "Некорректное значение";
+    position: absolute;
+    top: 3px;
+    left: 50%;
+
+    margin-left: -68px;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .input-number__input {
+    background-color: $error;
+  }
+}
+
+.input-number__wrap:hover .input-number__input {
+  background-color: $background-minor;
+}
+
+.input-number__wrap--error:hover .input-number__input {
+  background-color: $error;
+}
+
+.input-number__input {
+  @include font;
+
+  width: 50%;
+  padding: 0 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+
+  border: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+}
+
+.input-number__currency {
+  width: 50%;
+
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .input-number__wrap {
+    padding-left: 64px;
+
+    &--credit-period {
+      padding-left: 33px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-number__wrap {
+    padding-left: 68px;
+
+    &--credit-period {
+      padding-left: 33px;
+    }
+  }
+
+  .input-number__input,
+  .input-number__currency {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

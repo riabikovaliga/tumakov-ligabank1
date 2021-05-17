@@ -1,0 +1,108 @@
+@import "../../../scss/mixins";
+
+.credit-params__title {
+  @include step-title;
+
+  margin-bottom: 9px;
+}
+
+.credit-params__label {
+  display: block;
+  margin-bottom: 9px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $font-label;
+}
+
+.credit-params__button {
+  position: absolute;
+  top: 50%;
+
+  width: 40px;
+  height: 60px;
+  margin-top: -30px;
+  padding: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+
+  &--minus {
+    left: 0;
+
+    background-image: url("../../../assets/img/minus.svg");
+    background-position: 23px center;
+  }
+
+  &--plus {
+    right: 0;
+
+    background-image: url("../../../assets/img/plus.svg");
+    background-position: 9px center;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.credit-params__cost-range {
+  display: block;
+  margin-top: 5px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $font-semidark;
+}
+
+.credit-params__initial-payment {
+  margin-top: 10px;
+}
+
+.credit-params__credit-period {
+  margin-top: 10px;
+}
+
+.credit-params__checkboxes {
+  margin-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .credit-params__title {
+    margin-bottom: 14px;
+  }
+
+  .credit-params__button--plus {
+    right: 8px;
+  }
+
+  .credit-params__initial-payment,
+  .credit-params__credit-period {
+    margin-top: 15px;
+  }
+
+  .credit-params__checkboxes {
+    margin-top: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit-params__title {
+    margin-bottom: 16px;
+  }
+
+  .credit-params__initial-payment,
+  .credit-params__credit-period {
+    margin-top: 20px;
+  }
+
+  .credit-params__checkboxes {
+    margin-top: 22px;
+  }
+}

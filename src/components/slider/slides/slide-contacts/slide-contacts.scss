@@ -1,0 +1,40 @@
+@import "../../../../scss/variables";
+
+.slide--contacts {
+  background-color: #e6f1fe;
+  background-image: url("../../../../assets/img/slide-contacts-mobile@1x.png");
+  background-position: calc(50% + 94px) 0;
+  background-size: 196px 226px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../../../assets/img/slide-contacts-mobile@2x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slide--contacts {
+    background-image: url("../../../../assets/img/slide-contacts-tablet@1x.png");
+    background-position: calc(50% + 200px) 0;
+    background-size: 261px 300px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../assets/img/slide-contacts-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slide--contacts {
+    background-image: url("../../../../assets/img/slide-contacts-desktop@1x.png");
+    background-position: calc(50% + 267px) 0;
+    background-size: 348px 400px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../assets/img/slide-contacts-desktop@2x.png");
+    }
+  }
+
+  .slide__link--contacts {
+    width: 243px;
+  }
+}

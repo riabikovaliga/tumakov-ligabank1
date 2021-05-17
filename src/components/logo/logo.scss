@@ -1,0 +1,55 @@
+@import "../../scss/variables";
+
+.logo {
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo__picture,
+.logo__image {
+  width: 20px;
+  height: 19px;
+  margin-right: 8px;
+}
+
+.logo__text {
+  width: 89px;
+  height: 13px;
+}
+
+.logo__sub-text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    align-items: flex-end;
+  }
+
+  .logo__picture,
+  .logo__image {
+    width: 26px;
+    height: 24px;
+    margin-right: 6px;
+  }
+
+  .logo__text {
+    width: 101px;
+    height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__picture,
+  .logo__image {
+    width: 30px;
+    height: 27px;
+  }
+
+  .logo__text {
+    width: 112px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 6px;
+  left: 3px;
+}
+
+.slider__bullet {
+  @include slider-bullet;
+}
+
+@media (min-width: $tablet-width) {
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 11px;
+    left: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 36px;
+  }
+}

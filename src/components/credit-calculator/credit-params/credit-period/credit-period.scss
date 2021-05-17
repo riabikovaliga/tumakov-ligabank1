@@ -1,0 +1,18 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins";
+
+.credit-period__slider {
+  @include slider-input;
+
+  margin-top: 12px;
+}
+
+.credit-period__range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $font-semidark;
+}

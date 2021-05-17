@@ -1,0 +1,29 @@
+@import "../../scss/variables";
+
+.close-button {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../../assets/img/close.svg");
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .close-button {
+    background-size: 20px 20px;
+  }
+}

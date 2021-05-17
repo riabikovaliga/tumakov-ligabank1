@@ -1,0 +1,104 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.login__wrap {
+  position: relative;
+
+  min-width: 290px;
+  max-width: 460px;
+  min-height: 455px;
+  margin: 0 auto;
+  padding: 46px 16px;
+  padding-bottom: 41px;
+
+  background-color: $background-minor;
+  border: 4px solid $accent;
+}
+
+.login__logo {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 160px;
+  height: 37px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+
+  color: inherit;
+  text-decoration: none;
+
+  .logo__picture,
+  .logo__image {
+    width: 30px;
+    height: 27px;
+    margin-right: 8px;
+  }
+
+  .logo__text {
+    width: 112px;
+    height: 16px;
+  }
+
+  .logo__sub-text {
+    display: block;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.login__close {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .login {
+    padding: 45px;
+  }
+
+  .login__wrap {
+    min-width: 678px;
+    max-width: 800px;
+    padding: 55px 84px;
+  }
+
+  .login__logo {
+    margin-bottom: 31px;
+    margin-left: 0;
+  }
+
+  .login__close {
+    top: 53px;
+    right: 82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .login__wrap {
+    width: 544px;
+    min-width: 544px;
+    padding: 56px;
+  }
+
+  .login__logo {
+    margin-bottom: 30px;
+  }
+
+  .login__close {
+    right: 54px;
+  }
+}

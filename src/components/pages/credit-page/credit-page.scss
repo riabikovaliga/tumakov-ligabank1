@@ -1,0 +1,33 @@
+@import "../../../scss/variables";
+
+.credit-page__calculator {
+  margin-top: 53px;
+}
+
+.credit-page__map {
+  margin-top: 53px;
+}
+
+@media (min-width: $tablet-width) {
+  .credit-page__calculator {
+    margin-top: 69px;
+  }
+
+  .credit-page__map {
+    margin-top: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit-page__services {
+    margin-top: 60px;
+  }
+
+  .credit-page__calculator {
+    margin-top: 97px;
+  }
+
+  .credit-page__map {
+    margin-top: 97px;
+  }
+}

@@ -1,0 +1,86 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.credit-purpose__title {
+  @include step-title;
+
+  margin: 14px 0;
+}
+
+.credit-purpose__choice {
+  @include input;
+
+  position: relative;
+
+  font-weight: 500;
+
+  border-radius: 4px 4px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 13px;
+
+    width: 18px;
+    height: 11px;
+    margin-top: -5px;
+
+    background-image: url("../../../assets/img/select.svg");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
+
+  &--list-hidden {
+    border-radius: 4px;
+  }
+
+  &--list-hidden::before {
+    transform: rotate(0deg);
+  }
+}
+
+.credit-purpose__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  border: 1px solid $border-dark;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.credit-purpose__item:not(:last-child) {
+  border-bottom: 1px solid $border;
+}
+
+.credit-purpose__button {
+  @include input;
+
+  min-height: 59px;
+
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .credit-purpose__title {
+    margin: 19px 0;
+  }
+
+  .credit-purpose__choice::before {
+    right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit-purpose__title {
+    margin-top: 0;
+    margin-bottom: 22px;
+  }
+}

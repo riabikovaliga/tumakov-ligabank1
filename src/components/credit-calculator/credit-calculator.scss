@@ -1,0 +1,78 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.credit-calculator {
+  @include wrapper;
+}
+
+.credit-calculator__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+}
+
+.credit-calculator__purpose {
+  margin-top: 22px;
+}
+
+.credit-calculator__params {
+  margin-top: 25px;
+}
+
+.credit-calculator__offer {
+  margin-top: 32px;
+}
+
+.credit-calculator__order {
+  margin-top: 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .credit-calculator__title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .credit-calculator__params {
+    margin-top: 34px;
+  }
+
+  .credit-calculator__offer {
+    margin-top: 40px;
+  }
+
+  .credit-calculator__order {
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit-calculator__title {
+    font-size: 41px;
+    line-height: 57px;
+  }
+
+  .credit-calculator__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .credit-calculator__form-wrap {
+    width: 600px;
+    margin-top: 14px;
+  }
+
+  .credit-calculator__purpose {
+    margin-top: 0;
+  }
+
+  .credit-calculator__offer {
+    margin-top: 21px;
+    margin-left: 70px;
+  }
+
+  .credit-calculator__order {
+    margin-top: 62px;
+  }
+}

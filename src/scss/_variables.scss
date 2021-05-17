@@ -1,0 +1,37 @@
+//color-names
+$silver: #c1c2ca;
+$black: #1f1e25;
+$royalblue: #2c36f2;
+$ghostwhite: #f6f7ff;
+$gainsboro: #e0e1ea;
+$darkslategrey: #394959;
+$darkslategrey2: #2b3c4f;
+$slategrey: #707c87;
+$mediumblue: #2028b6;
+$crimson: #ff0033;
+
+//color-types
+$border: $silver;
+$border-dark: $black;
+$font-main: $black;
+$font-light: $ghostwhite;
+$font-label: $darkslategrey;
+$font-semidark: $slategrey;
+$font-slider: $darkslategrey2;
+$font-slider-light: $gainsboro;
+$accent: $royalblue;
+$background-minor: $ghostwhite;
+$background-accent: $accent;
+$slider-pagination-main: $mediumblue;
+$slider-pagination-light: $ghostwhite;
+$slider-pagination-inverse: $gainsboro;
+$error: $crimson;
+
+//sizes
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+//resolution
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

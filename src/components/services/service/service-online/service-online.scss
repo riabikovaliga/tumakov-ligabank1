@@ -1,0 +1,29 @@
+@import "../../../../scss/variables";
+
+.service--online {
+  background-image: url("../../../../assets/img/service-online-mobile@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../../../assets/img/service-online-mobile@2x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .service--online {
+    background-image: url("../../../../assets/img/service-online-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../assets/img/service-online-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service--online {
+    background-image: url("../../../../assets/img/service-online-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../assets/img/service-online-desktop@2x.png");
+    }
+  }
+}

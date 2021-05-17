@@ -1,0 +1,107 @@
+@import "../../../scss/variables";
+
+.credit-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.credit-popup__wrap {
+  position: relative;
+
+  width: 290px;
+  padding: 35px 24px;
+
+  text-align: center;
+
+  background-color: $background-minor;
+  border-radius: 4px;
+}
+
+.credit-popup__title {
+  width: 196px;
+  margin: 0 auto;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.credit-popup__description {
+  font-size: 16px;
+  line-height: 22px;
+  color: $font-label;
+}
+
+.credit-popup__close {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("../../../assets/img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 12px 12px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .credit-popup__wrap {
+    width: 678px;
+    padding: 52px;
+  }
+
+  .credit-popup__title {
+    width: auto;
+    margin-bottom: 12px;
+
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .credit-popup__description {
+    width: 293px;
+    margin: 0 auto;
+  }
+
+  .credit-popup__close {
+    top: 22px;
+    right: 22px;
+
+    width: 24px;
+    height: 24px;
+
+    background-size: 16px 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit-popup__wrap {
+    width: 500px;
+  }
+
+  .credit-popup__close {
+    top: 17px;
+    right: 17px;
+  }
+}

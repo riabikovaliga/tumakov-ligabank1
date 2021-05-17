@@ -1,0 +1,15 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins";
+
+.initial-payment__slider {
+  @include slider-input;
+}
+
+.initial-payment__percent {
+  display: block;
+  margin-top: 2px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $font-semidark;
+}
